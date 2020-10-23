@@ -1,11 +1,13 @@
 com\medeirosdaniel\XSSM\Enums\PriorityEnum.class
 com\medeirosdaniel\XSSM\Enums\StatusEnum.class
+com\medeirosdaniel\XSSM\Controller\ErrorController.class
 com\medeirosdaniel\XSSM\Service\TicketService.class
 com\medeirosdaniel\XSSM\Controller\TicketController.class
 com\medeirosdaniel\XSSM\Service\UserService.class
 com\medeirosdaniel\XSSM\Repository\TicketRepository.class
 com\medeirosdaniel\XSSM\Enums\SlaEnum.class
 com\medeirosdaniel\XSSM\Repository\BusinessRepository.class
+com\medeirosdaniel\XSSM\Entity\PersonForm.class
 com\medeirosdaniel\XSSM\DTO\OpennedTicketDTO.class
 com\medeirosdaniel\XSSM\Service\BusinessService.class
 com\medeirosdaniel\XSSM\Controller\ProblemController.class
@@ -19,7 +21,6 @@ com\medeirosdaniel\XSSM\Controller\UserController.class
 com\medeirosdaniel\XSSM\Entity\TicketUserEntity.class
 com\medeirosdaniel\XSSM\Controller\ThymeleafController.class
 com\medeirosdaniel\XSSM\Repository\TicketUserRepository.class
-com\medeirosdaniel\XSSM\Entity\UserEntity2.class
 com\medeirosdaniel\XSSM\MailSender\SendAMail.class
 com\medeirosdaniel\XSSM\Entity\UserEntity.class
 com\medeirosdaniel\XSSM\Service\TicketUserService.class
@@ -31,3 +32,4 @@ com\medeirosdaniel\XSSM\Util\PageRequest.class
 com\medeirosdaniel\XSSM\Entity\ProblemEntity.class
 com\medeirosdaniel\XSSM\Entity\TicketEntity.class
 com\medeirosdaniel\XSSM\Repository\UserRepository.class
+com\medeirosdaniel\XSSM\Controller\NewUserController.class
