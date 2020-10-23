@@ -1,0 +1,13 @@
+
+c
+java:S1128"FRemove this unused import 'com.medeirosdaniel.XSSM.Entity.UserEntity'.(«‰Î¿8Á½‡ÈÔ.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹™‚Âÿÿÿÿÿ
+p
+java:S1128
+"SRemove this unused import 'org.springframework.web.bind.annotation.RequestMapping'.(ö»¿ë8å“™ÈÔ.
+[
+java:S1128"9Remove this unused import 'org.springframework.ui.Model'.(ê†ıÿÿÿÿ8ƒêÊ•Õ.
+b
+java:S4684"@Replace this persistent entity with a simple POJO or DTO object.(‹ìë©şÿÿÿÿ8ƒêÊ•Õ.
+\
+java:S4684"@Replace this persistent entity with a simple POJO or DTO object.(˜ú©8ƒêÊ•Õ.

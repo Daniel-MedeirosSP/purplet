@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>OpenTicket - Abertura de Chamados</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" th:href="@{/adminlte3.0.5/plugins/fontawesome-free/css/all.min.css}">
+    <!-- Ionicons -->
+    <link rel="stylesheet" th:href="@{https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css}">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" th:href="@{/adminlte3.0.5/plugins/icheck-bootstrap/icheck-bootstrap.min.css}">
+    <!-- Theme style -->
+    <link th:href="@{/adminlte3.0.5/dist/css/adminlte.min.css}" rel="stylesheet">
+    <!-- Bootstrap Color Picker -->
+    <link th:href="@{/adminlte3.0.5/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css}" rel="stylesheet">
+    <!-- Select2 -->
+    <link th:href="@{/adminlte3.0.5/plugins/select2/css/select2.min.css}" rel="stylesheet">
+    <link th:href="@{/adminlte3.0.5/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css}" rel="stylesheet">
+
+    <!-- Google Font: Source Sans Pro -->
+    <link th:href="@{https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700}" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand navbar-dark navbar-purple">
+                <ul class="navbar-nav">
+                    <li class="navbar-item">
+                        <a class="nav-link" >Controle seus Chamados e Protocolos em um único lugar.</a>
+                        <a class="nav-link" th:text="${cadOk}"></a>
+                    </li>
+
+                </ul>
+                <ul class="order-1 navbar-nav navbar-no-expand ml-auto">
+                    <li class="navbar-item">
+                        <a class="nav-link" th:href="@{/adduser}">Inscreva-se</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" th:href="@{/login}">Login</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" th:href="@{/purplet}">Abrir Chamado</a>
+                    </li>
+                </ul>
+
+
+
+
+            </nav>
+            <div class="row">
+                <div class="col-md-8">
+                    <picture>
+                        <source sizes="100%" th:srcset="@{/img/index1.png}">
+                        <img th:src="@{/img/index1.png}">
+                    </picture>
+                </div>
+                <div class="col-md-4">
+
+
+                    <!-- /.login-logo -->
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="login-box-msg">Problemas ? Abra seu chamado de forma rápida!</p>
+
+
+                            <blockquote>
+                                <h2>Como funciona a Abertura de Chamados pelo Purplet ?</h2>
+                                <p>O profissional que presta suporte aos clientes, deve cadastrar a empresa, e os
+                                    usuários. Com esse cadastro ativo,
+                                    é necessário inserir seu e-mail cadastrado na plataforma(Campo Obrigatório),
+                                    selecionar seu problema(Campo Obrigatório),
+                                    e por fim uma breve descrição do que está ocorrendo.</p>
+                                <p>O usuário receberá um e-mail com os dados da abertura.</p>
+                                <br>
+                                <h4>Obrigado por usar o Purplet</h4>
+                            </blockquote>
+                        </div>
+                        <!-- /.login-card-body -->
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row text-center">
+            <footer class="main-footer">
+                <div class="float-right d-none d-sm-block">
+                    <b>Version</b> 3.0.5
+                </div>
+                <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights
+                reserved.
+                <p>Ícones feitos por <a href="https://www.flaticon.com/br/autores/freepik"
+                                        title="Freepik">Freepik</a> from <a
+                        href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></p>
+            </footer>
+        </div>
+    </div>
+</div>
+
+
+        <!-- jQuery -->
+        <script src="@{/adminlte3.0.5/plugins/jquery/jquery.min.js}"></script>
+        <!-- Bootstrap 4 -->
+        <script src="@{/adminlte3.0.5/plugins/bootstrap/js/bootstrap.bundle.min.js}"></script>
+        <!-- AdminLTE App -->
+        <script src="@{/adminlte3.0.5/dist/js/adminlte.min.js}"></script>
+</body>
+</html>

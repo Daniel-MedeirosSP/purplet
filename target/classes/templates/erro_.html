@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>OpenTicket - Abertura de Chamados</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" th:href="@{/adminlte3.0.5/plugins/fontawesome-free/css/all.min.css}">
+    <!-- Ionicons -->
+    <link rel="stylesheet" th:href="@{https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css}">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" th:href="@{/adminlte3.0.5/plugins/icheck-bootstrap/icheck-bootstrap.min.css}">
+    <!-- Theme style -->
+    <link th:href="@{/adminlte3.0.5/dist/css/adminlte.min.css}" rel="stylesheet">
+    <!-- Bootstrap Color Picker -->
+    <link th:href="@{/adminlte3.0.5/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css}" rel="stylesheet">
+    <!-- Select2 -->
+    <link th:href="@{/adminlte3.0.5/plugins/select2/css/select2.min.css}" rel="stylesheet">
+    <link th:href="@{/adminlte3.0.5/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css}" rel="stylesheet">
+
+    <!-- Google Font: Source Sans Pro -->
+    <link th:href="@{https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700}" rel="stylesheet">
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+    <div class="login-logo">
+        <a><b>Open</b>Ticket</a>
+    </div>
+    <!-- /.login-logo -->
+    <div class="card">
+        <div class="card-body login-card-body">
+            <p class="login-box-msg">Informação de Erro</p>
+                <div class="input-group mb-3">
+                    <h4 class="text-danger text-center" th:text="${msgErro}"></h4>
+                </div>
+        </div>
+        <!-- /.login-card-body -->
+    </div>
+    <a class="form-control btn btn-dark" th:href="@{/purplet}">Abrir um <b>Chamado</b></a>
+</div>
+<!-- jQuery -->
+<script src="@{/adminlte3.0.5/plugins/jquery/jquery.min.js}"></script>
+<!-- Bootstrap 4 -->
+<script src="@{/adminlte3.0.5/plugins/bootstrap/js/bootstrap.bundle.min.js}"></script>
+<!-- AdminLTE App -->
+<script src="@{/adminlte3.0.5/dist/js/adminlte.min.js}"></script>
+</body>
+</html>
