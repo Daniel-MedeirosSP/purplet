@@ -57,3 +57,6 @@ o
 ?src/main/java/com/medeirosdaniel/XSSM/MailSender/SendAMail.java,b\3\b3af741c38f3dbce8963b2f460c3f6cf53795897
 u
 Esrc/main/java/com/medeirosdaniel/XSSM/Controller/ErrorController.java,a\c\ac7d5c0ab3e71fb8e4b4f67730ebb8cf5f38f85b
+:
+
+Dockerfile,6\6\6651ddff6eb82c840ced7c1dddee15c6e1913dd4
