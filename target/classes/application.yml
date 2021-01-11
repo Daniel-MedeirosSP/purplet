@@ -1,0 +1,10 @@
+spring:
+  data:
+    rest:
+      detective-strategy:annotated
+    mongodb:
+      uri: mongodb+srv://purpletConnMongo:GqS6Q4uJpEHBy3Cw@cluster0.bvd1a.mongodb.net/purplet?authSource=admin&replicaSet=atlas-gb7edd-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+

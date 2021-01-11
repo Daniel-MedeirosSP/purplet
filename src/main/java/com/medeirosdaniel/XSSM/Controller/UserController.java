@@ -5,6 +5,7 @@ import com.medeirosdaniel.XSSM.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.mail.MessagingException;
 import java.util.List;
 import java.util.Optional;
 
@@ -31,7 +32,7 @@ public class UserController {
     }
 
     @GetMapping(value="/unlock/{code}/{username}")
-    public Boolean unlockAccount(@PathVariable("code") String code, @PathVariable("username") String username){
+    public Boolean unlockAccount(@PathVariable("code") String code, @PathVariable("username") String username) throws MessagingException {
         return userService.lockAccount(username,code);
     }
 }

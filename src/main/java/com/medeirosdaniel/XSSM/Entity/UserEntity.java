@@ -18,6 +18,7 @@ import java.io.Serializable;
 @Document(collection = "User")
 public class UserEntity implements Serializable {
 
+    private static final String LENGHMIN8 = "Requires a minimum of 8 characters";
     private static final long serialVersionUID = 2564224907344618399L;
 
     @Id
@@ -25,15 +26,16 @@ public class UserEntity implements Serializable {
 
     @Indexed(unique = true)
     @NotBlank(message = "UserName required")
-    @Size(min = 8, message = "Username requires a minimum of 8 characters")
+    @Size(min = 8, message = LENGHMIN8)
     private String username;
 
+    @Size(min = 8, message = LENGHMIN8)
     private String password;
 
     @Indexed(unique = true)
     @Email
     @NotBlank(message = "E-Mail required")
-    @Size(min = 8, message = "E-mail requires a minimum of 8 characters")
+    @Size(min = 8, message = LENGHMIN8)
     private String email;
 
     private String cnpj;

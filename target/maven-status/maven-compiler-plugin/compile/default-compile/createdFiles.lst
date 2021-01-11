@@ -1,5 +1,6 @@
 com\medeirosdaniel\XSSM\Enums\PriorityEnum.class
 com\medeirosdaniel\XSSM\Enums\StatusEnum.class
+com\medeirosdaniel\XSSM\Util\Formats.class
 com\medeirosdaniel\XSSM\Controller\ErrorController.class
 com\medeirosdaniel\XSSM\Service\TicketService.class
 com\medeirosdaniel\XSSM\Controller\TicketController.class
@@ -15,6 +16,7 @@ com\medeirosdaniel\XSSM\SystemExceptions\UserNameException.class
 com\medeirosdaniel\XSSM\Repository\ProblemRepository.class
 com\medeirosdaniel\XSSM\XssmApplication.class
 com\medeirosdaniel\XSSM\Repository\UserRepository2.class
+com\medeirosdaniel\XSSM\Config\SwaggerConfig.class
 com\medeirosdaniel\XSSM\Util\BeanMapper.class
 com\medeirosdaniel\XSSM\Enums\ProfileEnum.class
 com\medeirosdaniel\XSSM\Controller\UserController.class
@@ -23,11 +25,13 @@ com\medeirosdaniel\XSSM\Controller\ThymeleafController.class
 com\medeirosdaniel\XSSM\Repository\TicketUserRepository.class
 com\medeirosdaniel\XSSM\MailSender\SendAMail.class
 com\medeirosdaniel\XSSM\Entity\UserEntity.class
+com\medeirosdaniel\XSSM\Controller\TestController.class
 com\medeirosdaniel\XSSM\Service\TicketUserService.class
 com\medeirosdaniel\XSSM\Entity\BusinessEntity.class
 com\medeirosdaniel\XSSM\SystemExceptions\EmailNotFoundException.class
 com\medeirosdaniel\XSSM\DTO\TicketDTO.class
 com\medeirosdaniel\XSSM\Service\ProblemService.class
+com\medeirosdaniel\XSSM\Controller\Request\MkLoginRequest.class
 com\medeirosdaniel\XSSM\Util\PageRequest.class
 com\medeirosdaniel\XSSM\Entity\ProblemEntity.class
 com\medeirosdaniel\XSSM\Entity\TicketEntity.class

@@ -1,5 +1,7 @@
 
-\
-java:S4684"@Replace this persistent entity with a simple POJO or DTO object.(§«À!8™ŒÔ–Õ.
-a	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(§«À!8™ŒÔ–Õ.
+a	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(§«À!8™ŒÔ–Õ.
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹™‚Âÿÿÿÿÿ
+\
+java:S4684"@Replace this persistent entity with a simple POJO or DTO object.(§«À!8™ŒÔ–Õ.
+˜
+java:S1130#"vRemove the declaration of thrown exception 'javax.mail.MessagingException', as it cannot be thrown from method's body.(ç£Íıÿÿÿÿ8³ù¶¾î.

@@ -1,9 +1,11 @@
 package com.medeirosdaniel.XSSM.Service;
 
+import com.medeirosdaniel.XSSM.Controller.Request.MkLoginRequest;
 import com.medeirosdaniel.XSSM.Entity.UserEntity;
 import com.medeirosdaniel.XSSM.Enums.ProfileEnum;
 import com.medeirosdaniel.XSSM.Repository.UserRepository;
 import com.medeirosdaniel.XSSM.SystemExceptions.UserNameException;
+import com.medeirosdaniel.XSSM.Util.Formats;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +17,6 @@ import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 import java.util.List;
 import java.util.Optional;
-import java.util.UUID;
 
 @Service
 public class UserService {
@@ -58,10 +59,10 @@ public class UserService {
         if (userEntity.getProfile() == null) {
             userEntity.setProfile(ProfileEnum.ROLE_USER);
         }
-        UUID uuid = UUID.randomUUID();
-        String myRandom = uuid.toString();
+        Formats formats = new Formats();
+
         userEntity.setLockAccount(true);
-        userEntity.setUnlockCode(myRandom);
+        userEntity.setUnlockCode(formats.generateCode());
 
         // Desbloqueio de Senha
         String keyAccess = "http://127.0.0.1:8080/unlock/"+userEntity.getUnlockCode()+"/"+userEntity.getUsername();
@@ -79,14 +80,42 @@ public class UserService {
         return userRepository.save(userEntity);
     }
 
-
-    public Boolean lockAccount(String username, String code) {
+    public Boolean lockAccount(String username, String code) throws MessagingException {
+        Formats formats = new Formats();
         UserEntity unlock = userRepository.findByUsername(username);
         if (code.equals(unlock.getUnlockCode())) {
             unlock.setLockAccount(Boolean.FALSE);
+            unlock.setPassword(formats.generateCommonLangPassword());
+            unlock.setUnlockCode(formats.generateCode());
+            String text = "<h1>Purplet: Envio de Senha!</h1><br><p>Obrigado por Ativar sua conta, segue agora sua senha de ao Sistema:</p>" +
+                    "<a>Sua senha é:<h2>"+unlock.getPassword()+"</h2></a><p>Caso deseje mudar ela, acesse login e depois [alterar senha]";
+            sendGenericEmail(unlock.getEmail(), "Purplet: Envio da Senha de Acesso",text);
             userRepository.save(unlock);
             return Boolean.FALSE;
         }
         return Boolean.TRUE;
     }
+
+    private void sendGenericEmail(String mail, String subject, String text)
+            throws MessagingException {
+        MimeMessage msg = javaMailSender.createMimeMessage();
+        MimeMessageHelper helper = new MimeMessageHelper(msg,true);
+        helper.setTo(mail);
+        helper.setSubject(subject);
+        helper.setText(text,true);
+        javaMailSender.send(msg);
+    }
+
+    public Boolean checkLogin(MkLoginRequest request){
+        Boolean validLogin = false;
+        UserEntity checkLogin = userRepository.findByEmail(request.getEmail());
+        if(checkLogin.getEmail() != null &&
+                checkLogin.getPassword().equals(request.getPassword())){
+
+            validLogin = true;
+
+        }
+        return validLogin;
+    }
+
 }

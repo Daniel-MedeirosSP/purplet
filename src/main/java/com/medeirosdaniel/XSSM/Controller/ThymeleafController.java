@@ -1,16 +1,17 @@
 package com.medeirosdaniel.XSSM.Controller;
 
+import com.medeirosdaniel.XSSM.Controller.Request.MkLoginRequest;
 import com.medeirosdaniel.XSSM.DTO.OpennedTicketDTO;
 import com.medeirosdaniel.XSSM.DTO.TicketDTO;
 import com.medeirosdaniel.XSSM.Entity.ProblemEntity;
 import com.medeirosdaniel.XSSM.Entity.TicketEntity;
 import com.medeirosdaniel.XSSM.Entity.UserEntity;
-import com.medeirosdaniel.XSSM.Entity.PersonForm;
 import com.medeirosdaniel.XSSM.Repository.UserRepository;
 import com.medeirosdaniel.XSSM.Service.ProblemService;
 import com.medeirosdaniel.XSSM.Service.TicketService;
 import com.medeirosdaniel.XSSM.Service.UserService;
 import com.medeirosdaniel.XSSM.SystemExceptions.UserNameException;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -27,9 +28,6 @@ import java.util.List;
 
 @Controller
 public class ThymeleafController {
-
-    private static final String USER = "user";
-    private static final String INDEX = "index";
 
     @Autowired
     private UserRepository userRepository;
@@ -90,6 +88,19 @@ public class ThymeleafController {
                 " use ela para ativar sua conta e começar a usar o Purplet");
         model.addAttribute("user", userEntity);
         return "index";
+    }
+
+    @PostMapping("/thmklogin")
+    public String thmklogin(MkLoginRequest request,BindingResult result, ModelMapper mapper){
+        if(result.hasErrors()){
+            return "thmklogin";
+        }
+        if(userService.checkLogin(request)){
+            return "thdashboard";
+        }else{
+            return "erro_";
+        }
+
     }
     
 }

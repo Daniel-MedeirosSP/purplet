@@ -1,4 +1,4 @@
 
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(½­ø
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Êã³¶øÿÿÿÿ8¼õÇ²Ö.
 U
-java:S1874R"3Remove this use of "newInstance"; it is deprecated.(…è˜åûÿÿÿÿ8Œœ¹¢Î.
+java:S1874R"3Remove this use of "newInstance"; it is deprecated.(…è˜åûÿÿÿÿ8¼õÇ²Ö.
