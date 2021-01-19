@@ -48,8 +48,21 @@ public class ThymeleafController {
     }
 
     @GetMapping("/login")
-    public String goLogin() {
+    public String goLogin(Model model) {
+        model.addAttribute("request",new MkLoginRequest());
         return "login";
+    }
+
+    @PostMapping("/thmklogin")
+    public String thmkLogin(@ModelAttribute MkLoginRequest request,Model model) {
+                Boolean getAuth = userService.checkLogin(request);
+        if(getAuth){
+            model.addAttribute("logon",request.getEmail());
+            return "thdashboard";
+        }else{
+            return "erro_";
+        }
+
     }
 
     @GetMapping(value = "/purplet")
@@ -73,6 +86,7 @@ public class ThymeleafController {
 //        result.getTicketNumber()
         return "opennedticket";
     }
+
     @GetMapping("/adduser")
     public String showSingUpForm(UserEntity userEntity) {
         return "adduser";
@@ -81,27 +95,17 @@ public class ThymeleafController {
     @PostMapping("/adduser")
     public String addUser(@Valid UserEntity userEntity, BindingResult result, Model model) throws UserNameException, MessagingException {
         if (result.hasErrors()) {
-             return "adduser";
+            return "adduser";
         }
         userService.crateOrUpdate(userEntity);
-        model.addAttribute("cadOk","Foi enviado um e-mail com uma chave de liveração de sua conta" +
+        model.addAttribute("cadOk", "Foi enviado um e-mail com uma chave de liveração de sua conta" +
                 " use ela para ativar sua conta e começar a usar o Purplet");
         model.addAttribute("user", userEntity);
         return "index";
     }
 
-    @PostMapping("/thmklogin")
-    public String thmklogin(MkLoginRequest request,BindingResult result, ModelMapper mapper){
-        if(result.hasErrors()){
-            return "thmklogin";
-        }
-        if(userService.checkLogin(request)){
-            return "thdashboard";
-        }else{
-            return "erro_";
-        }
 
-    }
-    
+
+
 }
 

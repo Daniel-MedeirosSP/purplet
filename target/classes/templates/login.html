@@ -41,10 +41,9 @@
         <div class="card-body login-card-body">
             <p class="login-box-msg">Pronto para o Login ?</p>
 
-            <form action="#" th:action="@{/thmklogin}" th:object="${Request}" method="post">
+            <form action="#" th:action="@{/thmklogin}" th:object="${request}" method="post">
                 <div class="input-group mb-3">
-                    <input type="email" class="form-control" placeholder="Email"
-                           th:field="*{email}">
+                    <input type="email" class="form-control" placeholder="Email" th:field="*{email}" >
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-envelope"></span>
@@ -52,7 +51,7 @@
                     </div>
                 </div>
                 <div class="input-group mb-3">
-                    <input type="password" class="form-control" placeholder="Password" th:field="*{}">
+                    <input type="password" th:field="*{password}" class="form-control" placeholder="Password">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-lock"></span>

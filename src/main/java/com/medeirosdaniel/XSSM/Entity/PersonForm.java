@@ -13,7 +13,7 @@ import javax.validation.constraints.Size;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Document
+@Document(collection = "person")
 public class PersonForm {
 
 
@@ -25,4 +25,5 @@ public class PersonForm {
     @NotBlank(message = "Email é Mandatório")
     @Size(min=3, max=50)
     private String email;
+
 }
