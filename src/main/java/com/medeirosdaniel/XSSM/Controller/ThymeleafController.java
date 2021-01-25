@@ -11,14 +11,13 @@ import com.medeirosdaniel.XSSM.Service.ProblemService;
 import com.medeirosdaniel.XSSM.Service.TicketService;
 import com.medeirosdaniel.XSSM.Service.UserService;
 import com.medeirosdaniel.XSSM.SystemExceptions.UserNameException;
-import org.modelmapper.ModelMapper;
+import com.medeirosdaniel.XSSM.Util.Formats;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 
 import javax.mail.MessagingException;
 import javax.validation.Valid;
@@ -55,9 +54,13 @@ public class ThymeleafController {
 
     @PostMapping("/thmklogin")
     public String thmkLogin(@ModelAttribute MkLoginRequest request,Model model) {
+        Formats formats = new Formats();
                 Boolean getAuth = userService.checkLogin(request);
         if(getAuth){
-            model.addAttribute("logon",request.getEmail());
+            String username = "Olá ";
+            username = username + formats.convertCamelCase(userService.getUserNameByEmail(request.getEmail()));
+
+            model.addAttribute("username", username);
             return "thdashboard";
         }else{
             return "erro_";
@@ -103,9 +106,5 @@ public class ThymeleafController {
         model.addAttribute("user", userEntity);
         return "index";
     }
-
-
-
-
 }
 

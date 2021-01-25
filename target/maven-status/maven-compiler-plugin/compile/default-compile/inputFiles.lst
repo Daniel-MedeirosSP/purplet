@@ -2,6 +2,7 @@ D:\PRJ-Java\purplet\src\main\java\com\medeirosdaniel\XSSM\Repository\UserReposit
 D:\PRJ-Java\purplet\src\main\java\com\medeirosdaniel\XSSM\Entity\BusinessEntity.java
 D:\PRJ-Java\purplet\src\main\java\com\medeirosdaniel\XSSM\Controller\TestController.java
 D:\PRJ-Java\purplet\src\main\java\com\medeirosdaniel\XSSM\DTO\TicketDTO.java
+D:\PRJ-Java\purplet\src\main\java\com\medeirosdaniel\XSSM\Entity\CriteriaEntity.java
 D:\PRJ-Java\purplet\src\main\java\com\medeirosdaniel\XSSM\Util\Formats.java
 D:\PRJ-Java\purplet\src\main\java\com\medeirosdaniel\XSSM\Enums\ProfileEnum.java
 D:\PRJ-Java\purplet\src\main\java\com\medeirosdaniel\XSSM\Controller\ThymeleafController.java
@@ -30,6 +31,7 @@ D:\PRJ-Java\purplet\src\main\java\com\medeirosdaniel\XSSM\Enums\StatusEnum.java
 D:\PRJ-Java\purplet\src\main\java\com\medeirosdaniel\XSSM\Entity\UserEntity.java
 D:\PRJ-Java\purplet\src\main\java\com\medeirosdaniel\XSSM\SystemExceptions\EmailNotFoundException.java
 D:\PRJ-Java\purplet\src\main\java\com\medeirosdaniel\XSSM\Entity\ProblemEntity.java
+D:\PRJ-Java\purplet\src\main\java\com\medeirosdaniel\XSSM\Entity\ProblemDEntity.java
 D:\PRJ-Java\purplet\src\main\java\com\medeirosdaniel\XSSM\Controller\UserController.java
 D:\PRJ-Java\purplet\src\main\java\com\medeirosdaniel\XSSM\Entity\TicketEntity.java
 D:\PRJ-Java\purplet\src\main\java\com\medeirosdaniel\XSSM\Service\UserService.java

@@ -2,17 +2,23 @@ package com.medeirosdaniel.XSSM.Util;
 
 
 import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.StringTokenizer;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Service
 public class Formats {
 
-    public String generateCode(){
+    private final Logger logger = LogManager.getLogger(this.getClass());
+
+    public String generateCode() {
         UUID uuid = UUID.randomUUID();
         String myRandom = uuid.toString();
         return myRandom;
@@ -36,6 +42,20 @@ public class Formats {
                 .collect(StringBuilder::new, StringBuilder::append, StringBuilder::append)
                 .toString();
         return password;
+    }
+
+    public String convertCamelCase(String texto) {
+        StringTokenizer tk = new StringTokenizer(texto, " ");
+        String camelCase ="";
+
+        while (tk.hasMoreElements()) {
+
+            camelCase = camelCase + StringUtils.capitalize(tk.nextToken());
+            if(tk.hasMoreElements() == Boolean.TRUE){
+                camelCase = camelCase + " ";
+            }
+        }
+        return camelCase;
     }
 
 }

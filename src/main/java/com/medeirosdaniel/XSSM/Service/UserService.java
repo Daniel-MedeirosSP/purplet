@@ -21,7 +21,7 @@ import java.util.Optional;
 @Service
 public class UserService {
 
-    static final Logger logger = LogManager.getLogger(UserService.class);
+    private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Autowired
     private JavaMailSender javaMailSender;
@@ -118,4 +118,8 @@ public class UserService {
         return validLogin;
     }
 
+    public String getUserNameByEmail(String email){
+        UserEntity getUser = userRepository.findByEmail(email);
+        return getUser.getUsername();
+    }
 }

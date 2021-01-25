@@ -1,8 +1,10 @@
 
 \
-java:S4684M"@Replace this persistent entity with a simple POJO or DTO object.(¼Àˆ8ôéÊ•Õ.
+java:S4684^"@Replace this persistent entity with a simple POJO or DTO object.(¼Àˆ8ôéÊ•Õ.
+G
+java:S5411;"*Use the primitive boolean expression here.(˜ÛÇÎ8µ“¾Åñ.
 ]
-java:S4684R"@Replace this persistent entity with a simple POJO or DTO object.(¤è¼ˆ8ôéÊ•Õ.
+java:S4684c"@Replace this persistent entity with a simple POJO or DTO object.(¤è¼ˆ8ôéÊ•Õ.
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹™‚Âÿÿÿÿÿ
-L
-java:S5411b"*Use the primitive boolean expression here.(¥ò‡ûúÿÿÿÿ8±õ…“ï.
+c
+java:S1128"ARemove this unused import 'org.apache.commons.lang3.StringUtils'.(Øœ¼ºúÿÿÿÿ8®»¤ó.

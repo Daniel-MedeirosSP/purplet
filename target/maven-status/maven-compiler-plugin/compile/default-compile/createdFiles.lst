@@ -17,12 +17,14 @@ com\medeirosdaniel\XSSM\Repository\ProblemRepository.class
 com\medeirosdaniel\XSSM\XssmApplication.class
 com\medeirosdaniel\XSSM\Repository\UserRepository2.class
 com\medeirosdaniel\XSSM\Config\SwaggerConfig.class
+com\medeirosdaniel\XSSM\Entity\CriteriaEntity.class
 com\medeirosdaniel\XSSM\Util\BeanMapper.class
 com\medeirosdaniel\XSSM\Enums\ProfileEnum.class
 com\medeirosdaniel\XSSM\Controller\UserController.class
 com\medeirosdaniel\XSSM\Entity\TicketUserEntity.class
 com\medeirosdaniel\XSSM\Controller\ThymeleafController.class
 com\medeirosdaniel\XSSM\Repository\TicketUserRepository.class
+com\medeirosdaniel\XSSM\Entity\ProblemDEntity.class
 com\medeirosdaniel\XSSM\MailSender\SendAMail.class
 com\medeirosdaniel\XSSM\Entity\UserEntity.class
 com\medeirosdaniel\XSSM\Controller\TestController.class

@@ -68,3 +68,11 @@ l
 <src/main/java/com/medeirosdaniel/XSSM/Entity/PersonForm.java,d\c\dcaf7b9c99cabc7279871fec00b5d50c2a798036
 g
 7src/main/java/com/medeirosdaniel/XSSM/Util/Formats.java,9\4\943c7f9be94763f7b30f55f810629c8336b781f9
+p
+@src/main/java/com/medeirosdaniel/XSSM/Entity/CriteriaEntity.java,f\5\f595edbd7d9d1fb4242c44f69708cd3cf5f60587
+p
+@src/main/java/com/medeirosdaniel/XSSM/Entity/ProblemDEntity.java,1\5\15bd482cd94efbf19be717e51d9f06394fc9036c
+|
+Lsrc/main/java/com/medeirosdaniel/XSSM/Controller/Request/MkLoginRequest.java,0\3\0343c91dae415383f89a39a2d9db89609de8d8ac
+t
+Dsrc/main/java/com/medeirosdaniel/XSSM/Repository/UserRepository.java,f\c\fcacd35d606dda42ba3dcc0bece668e5c1db7b14
