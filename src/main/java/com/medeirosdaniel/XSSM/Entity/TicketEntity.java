@@ -21,6 +21,8 @@ public class TicketEntity implements Serializable {
     @Id
     private String id;
 
+    private String hashUrl;
+
     private UserEntity user;
 
     private String email;

@@ -9,4 +9,6 @@ public interface UserRepository extends MongoRepository<UserEntity, String> {
 
     UserEntity findByEmail (String email);
 
+    UserEntity findByHashUrl (String hashUrl);
+
 }

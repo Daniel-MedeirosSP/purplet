@@ -4,8 +4,10 @@ com\medeirosdaniel\XSSM\Util\Formats.class
 com\medeirosdaniel\XSSM\Controller\ErrorController.class
 com\medeirosdaniel\XSSM\Service\TicketService.class
 com\medeirosdaniel\XSSM\Controller\TicketController.class
+com\medeirosdaniel\XSSM\Service\ServiceInitService.class
 com\medeirosdaniel\XSSM\Service\UserService.class
 com\medeirosdaniel\XSSM\Repository\TicketRepository.class
+com\medeirosdaniel\XSSM\Repository\ProblemCriteriaRepository.class
 com\medeirosdaniel\XSSM\Enums\SlaEnum.class
 com\medeirosdaniel\XSSM\Repository\BusinessRepository.class
 com\medeirosdaniel\XSSM\Entity\PersonForm.class
@@ -22,11 +24,15 @@ com\medeirosdaniel\XSSM\Util\BeanMapper.class
 com\medeirosdaniel\XSSM\Enums\ProfileEnum.class
 com\medeirosdaniel\XSSM\Controller\UserController.class
 com\medeirosdaniel\XSSM\Entity\TicketUserEntity.class
+com\medeirosdaniel\XSSM\Controller\Request\CriteriaEmailRequest.class
 com\medeirosdaniel\XSSM\Controller\ThymeleafController.class
 com\medeirosdaniel\XSSM\Repository\TicketUserRepository.class
+com\medeirosdaniel\XSSM\Entity\ProblemCriteriasEntity.class
 com\medeirosdaniel\XSSM\Entity\ProblemDEntity.class
+com\medeirosdaniel\XSSM\DTO\CriteriaDTO.class
 com\medeirosdaniel\XSSM\MailSender\SendAMail.class
 com\medeirosdaniel\XSSM\Entity\UserEntity.class
+com\medeirosdaniel\XSSM\Service\ProblemCriteriasService.class
 com\medeirosdaniel\XSSM\Controller\TestController.class
 com\medeirosdaniel\XSSM\Service\TicketUserService.class
 com\medeirosdaniel\XSSM\Entity\BusinessEntity.class

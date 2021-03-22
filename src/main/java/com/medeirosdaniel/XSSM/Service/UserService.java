@@ -61,6 +61,7 @@ public class UserService {
         }
         Formats formats = new Formats();
 
+        userEntity.setHashUrl(String.valueOf(System.currentTimeMillis()));
         userEntity.setLockAccount(true);
         userEntity.setUnlockCode(formats.generateCode());
 

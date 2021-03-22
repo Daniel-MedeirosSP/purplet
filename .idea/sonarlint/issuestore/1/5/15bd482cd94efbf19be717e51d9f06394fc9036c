@@ -1,7 +1,5 @@
 
+L
+java:S1948"*Make "criteria" transient or serializable.(šÒ™Ÿøÿÿÿÿ8ÊîÏˆô.
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”Ç¨´
 o	java:S116"NRename this field "_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í—ø¨ýÿÿÿÿ8ºÔ“Áñ.
-N
-java:S1068",Remove this unused "category" private field.(‘Ñ¤’üÿÿÿÿ8ë÷©Áñ.
-N
-java:S1068",Remove this unused "criteria" private field.(šÒ™Ÿøÿÿÿÿ8ë÷©Áñ.

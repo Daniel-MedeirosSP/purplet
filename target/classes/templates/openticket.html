@@ -32,7 +32,8 @@
             <nav class="navbar navbar-expand navbar-dark navbar-purple">
                 <ul class="navbar-nav">
                     <li class="navbar-item">
-                        <a class="nav-link"><strong>Purplet</strong> - Controle seus Chamados e Protocolos em um único lugar.</a>
+                        <a class="nav-link"><strong>Purplet</strong> - Controle seus Chamados e Protocolos em um único
+                            lugar.</a>
                     </li>
                 </ul>
             </nav>
@@ -53,8 +54,16 @@
 
                             <form action="#" th:action="@{/purplet}" th:object="${ticket}" method="post">
                                 <div class="input-group mb-3">
-                                    <input type="email" class="form-control" placeholder="Email" th:field="*{email}" >
-<!--                                    <p th:if-->
+                                    <input type="text" class="form-control"  id="hashUrl" th:field="*{hashUrl}" readonly>
+                                    <div class="input-group-append">
+                                        <div class="input-group-text">
+                                            <span class="fas fa-edit"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="email" class="form-control" placeholder="Email" th:field="*{email}">
+                                    <!--                                    <p th:if-->
                                     <div class="input-group-append">
                                         <div class="input-group-text">
                                             <span class="fas fa-envelope"></span>
@@ -63,14 +72,16 @@
                                 </div>
                                 <label>Selecione seu Problema</label>
                                 <div class="input-group mb-3">
-                                    <select class="custom-select mb-3" data-placeholder="Tipo de Problema" th:field="*{title}">
+                                    <select class="custom-select mb-3" data-placeholder="Tipo de Problema"
+                                            th:field="*{title}">
                                         <option value="">Selecione um problema</option>
                                         <option th:each="pb : ${type}"
-                                                th:value="${pb.problem}" th:text="${pb.problem}" />
+                                                th:value="${pb.description}" th:text="${pb.description}"/>
                                     </select>
                                 </div>
                                 <div class="input-group mb-3">
-                                    <textarea class="form-control" placeholder="Descreva seu problema." th:field="*{description}"></textarea>
+                                    <textarea class="form-control" placeholder="Descreva seu problema."
+                                              th:field="*{description}"></textarea>
                                     <div class="input-group-append">
                                         <div class="input-group-text">
                                             <span class="fas fa-edit"></span>
@@ -78,7 +89,9 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <button type="submit" class="btn btn-dark btn-block" style="background-color: blueviolet;">Abrir Chamado</button>
+                                    <button type="submit" class="btn btn-dark btn-block"
+                                            style="background-color: blueviolet;">Abrir Chamado
+                                    </button>
                                 </div>
                             </form>
                             <blockquote>
@@ -91,7 +104,7 @@
                                 <p>O usuário receberá um e-mail com os dados da abertura.</p>
                                 <br>
                                 <h4>Obrigado por usar o <strong>Purplet</strong></h4>
-                            </blockquote >
+                            </blockquote>
                         </div>
                         <!-- /.login-card-body -->
 
@@ -117,13 +130,16 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+var showtext = "[[${hashUrl}]]";
+document.getElementById("hashUrl").value = showtext;
+</script>
 
-
-        <!-- jQuery -->
-        <script src="@{/adminlte3.0.5/plugins/jquery/jquery.min.js}"></script>
-        <!-- Bootstrap 4 -->
-        <script src="@{/adminlte3.0.5/plugins/bootstrap/js/bootstrap.bundle.min.js}"></script>
-        <!-- AdminLTE App -->
-        <script src="@{/adminlte3.0.5/dist/js/adminlte.min.js}"></script>
+<!-- jQuery -->
+<script src="@{/adminlte3.0.5/plugins/jquery/jquery.min.js}"></script>
+<!-- Bootstrap 4 -->
+<script src="@{/adminlte3.0.5/plugins/bootstrap/js/bootstrap.bundle.min.js}"></script>
+<!-- AdminLTE App -->
+<script src="@{/adminlte3.0.5/dist/js/adminlte.min.js}"></script>
 </body>
 </html>

@@ -43,6 +43,8 @@ public class UserEntity implements Serializable {
     @NotBlank(message = "Phone required")
     private String phone1;
 
+    private String hashUrl;
+
     private Boolean isWhatsApp;
 
     private Boolean isTelegram;

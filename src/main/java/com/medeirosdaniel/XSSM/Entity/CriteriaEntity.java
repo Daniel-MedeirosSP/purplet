@@ -1,5 +1,6 @@
 package com.medeirosdaniel.XSSM.Entity;
 
+import com.medeirosdaniel.XSSM.Enums.SlaEnum;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,14 +13,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 public class CriteriaEntity {
 
+ private String description;
 
-    private String problem;
-
-    private String profile;
-
-    private Boolean active;
-
-    private String sla;
-
-    private String priority;
+ private String sla;
 }

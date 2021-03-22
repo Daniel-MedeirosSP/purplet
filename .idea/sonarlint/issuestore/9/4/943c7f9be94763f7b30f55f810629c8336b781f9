@@ -1,14 +1,16 @@
 
-}
-java:S1488)"`Immediately return this expression instead of assigning it to the temporary variable "password".(ò‰Œœ8²æôÂî.
-}
-java:S1488"`Immediately return this expression instead of assigning it to the temporary variable "myRandom".(²ûÈ8æ’ç½î.
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Êã³¶øÿÿÿÿ
-G
-java:S1068"*Remove this unused "logger" private field.(æ×âÁ8£º§’ó.
 G
 java:S54116"*Use the primitive boolean expression here.(¡’§è8‘ÏŠó.
 9
 java:S16437"Use a StringBuilder instead.(æ¸æ¿8¢ª‹ó.
 9
 java:S16435"Use a StringBuilder instead.(¹ˆìò8€™„ó.
+G
+java:S1068"*Remove this unused "logger" private field.(æ×âÁ8£º§’ó.
+}
+java:S1488"`Immediately return this expression instead of assigning it to the temporary variable "myRandom".(²ûÈ8æ’ç½î.
+}
+java:S1488)"`Immediately return this expression instead of assigning it to the temporary variable "password".(ò‰Œœ8²æôÂî.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Êã³¶øÿÿÿÿ
+Z
+java:S1612&"=Replace this lambda with method reference 'char.class::cast'.(¨ßÛ·8›Éª¯ÿ.

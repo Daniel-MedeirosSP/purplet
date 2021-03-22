@@ -76,3 +76,19 @@ p
 Lsrc/main/java/com/medeirosdaniel/XSSM/Controller/Request/MkLoginRequest.java,0\3\0343c91dae415383f89a39a2d9db89609de8d8ac
 t
 Dsrc/main/java/com/medeirosdaniel/XSSM/Repository/UserRepository.java,f\c\fcacd35d606dda42ba3dcc0bece668e5c1db7b14
+x
+Hsrc/main/java/com/medeirosdaniel/XSSM/Entity/ProblemCriteriasEntity.java,8\0\80f31ad95602f57c89b6e69f64a0028f5b843fdb
+z
+Jsrc/main/java/com/medeirosdaniel/XSSM/Service/ProblemCriteriasService.java,5\0\500d9e15a4f5ae704ed5ca970cc3bc965102f47c
+
+Osrc/main/java/com/medeirosdaniel/XSSM/Repository/ProblemCriteriaRepository.java,a\7\a72de77e03b7a134dc72acacc0cdd294e38575b3
+u
+Esrc/main/java/com/medeirosdaniel/XSSM/Service/ServiceInitService.java,1\7\17ceaa9c28f6d37033e3505405efa99a06ba1e0c
+j
+:src/main/java/com/medeirosdaniel/XSSM/DTO/CriteriaDTO.java,e\2\e2d50191cd4a96e989d4a65ac27e116c0158c6ae
+‚
+Rsrc/main/java/com/medeirosdaniel/XSSM/Controller/Request/CriteriaEmailRequest.java,f\6\f627ea00488fda1458452fcaf0c9caed4de48200
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+o
+?src/main/java/com/medeirosdaniel/XSSM/Entity/ContactEntity.java,c\3\c386441123c47c58d12c44eb02976a4c824115f7

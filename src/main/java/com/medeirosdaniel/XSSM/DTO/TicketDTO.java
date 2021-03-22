@@ -19,6 +19,8 @@ public class TicketDTO {
 
     private String id;
 
+    private String hashUrl;
+
     private TicketUserEntity ticketUser;
 
     private String email;

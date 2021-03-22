@@ -1,0 +1,12 @@
+
+X
+java:S1854 "6Remove this useless assignment to local variable "cr".(æ’É»úÿÿÿÿ8¾¼öåô.
+N
+java:S1481",Remove this unused "getInfo" local variable.(Ñø¦šüÿÿÿÿ8Š¬åô.
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ËÑª
+]
+java:S1854";Remove this useless assignment to local variable "getInfo".(Ñø¦šüÿÿÿÿ8Š¬åô.
+G
+java:S1068"*Remove this unused "logger" private field.(æ×âÁ8®¯¬åô.
+I
+java:S1481 "'Remove this unused "cr" local variable.(æ’É»úÿÿÿÿ8¾¼öåô.

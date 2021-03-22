@@ -1,10 +1,27 @@
 
-\
-java:S4684^"@Replace this persistent entity with a simple POJO or DTO object.(¼Àˆ8ôéÊ•Õ.
 G
-java:S5411;"*Use the primitive boolean expression here.(˜ÛÇÎ8µ“¾Åñ.
-]
-java:S4684c"@Replace this persistent entity with a simple POJO or DTO object.(¤è¼ˆ8ôéÊ•Õ.
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹™‚Âÿÿÿÿÿ
+java:S5411J"*Use the primitive boolean expression here.(˜ÛÇÎ8µ“¾Åñ.
+i
+java:S1192c"LDefine a constant instead of duplicating this literal "thdashboard" 4 times.(†üÒÇ8ñßäîƒ/
+q
+java:S1192Z"ODefine a constant instead of duplicating this literal "listacriterios" 3 times.(¶êÞÂùÿÿÿÿ8´¾ÈÚþ.
+[	java:S106Ë"9Replace this use of System.out or System.err by a logger.(·±÷šüÿÿÿÿ8ð‚À¯ÿ.
+^
+java:S4684¾"@Replace this persistent entity with a simple POJO or DTO object.(¤è¼ˆ8¶Áî®ÿ.
 c
-java:S1128"ARemove this unused import 'org.apache.commons.lang3.StringUtils'.(Øœ¼ºúÿÿÿÿ8®»¤ó.
+java:S1192e"FDefine a constant instead of duplicating this literal "erro_" 3 times.(Ñ“ÅÒ8“ëð™û.
+k
+java:S1192]"IDefine a constant instead of duplicating this literal "criteria" 3 times.(ø¹¥ºûÿÿÿÿ8´¾ÈÚþ.
+N
+java:S1481r",Remove this unused "getMail" local variable.(Õ×ß•üÿÿÿÿ8ñâŠçü.
+a
+java:S1854¬">Remove this useless assignment to local variable "getUserTec".(Ë°è°ÿÿÿÿÿ8…üœÖÿ.
+]
+java:S4684¹"@Replace this persistent entity with a simple POJO or DTO object.(¼Àˆ8¶Áî®ÿ.
+^
+java:S4684Ž"@Replace this persistent entity with a simple POJO or DTO object.(øäø„8¹ŠØîƒ/
+R
+java:S1481¬"/Remove this unused "getUserTec" local variable.(Ë°è°ÿÿÿÿÿ8…üœÖÿ.
+G
+java:S1068""+Remove this unused "hashUrl" private field.(‹Õæ(8ƒ¹‘¯ÿ.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹™‚Âÿÿÿÿÿ
